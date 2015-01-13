@@ -25,6 +25,6 @@ wrapper.name=neo4j
 # user if not set.
 wrapper.user=<%= node.neo4j.server.user %>
 
-<% if node.neo4j.server.wrapper.additional.present? %>
+<% unless node.neo4j.server.wrapper.additional.nil? %>
   wrapper.java.additional=<%= node.neo4j.server.wrapper.additional %>
 <% end %>
