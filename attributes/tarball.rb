@@ -39,3 +39,12 @@ default[:neo4j][:server][:node_auto_indexing][:enabled]         = false
 default[:neo4j][:server][:node_auto_indexing][:keys_indexable]  = ''
 
 default[:neo4j][:server][:remote_shell][:port] = 1337
+
+
+default[:neo4j][:server][:wrapper][:additional] = nil
+
+default[:neo4j][:server][:properties]["neostore.nodestore.db.mapped_memory"] = nil
+default[:neo4j][:server][:properties]["neostore.relationshipstore.db.mapped_memory"] = nil
+default[:neo4j][:server][:properties]["neostore.propertystore.db.mapped_memory"] = nil
+default[:neo4j][:server][:properties]["neostore.propertystore.db.strings.mapped_memory"] = nil
+default[:neo4j][:server][:properties]["neostore.propertystore.db.arrays.mapped_memory"] = nil
