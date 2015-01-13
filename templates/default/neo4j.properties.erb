@@ -6,19 +6,19 @@
 #neostore.propertystore.db.arrays.mapped_memory=130M
 
 <% unless neo4j.server.properties["neostore.nodestore.db.mapped_memory"].nil? %>
-  neostore.nodestore.db.mapped_memory=<%= neo4j.server.properties["neostore.nodestore.db.mapped_memory"] %>M
+  neostore.nodestore.db.mapped_memory=<%= node.neo4j.server.properties["neostore.nodestore.db.mapped_memory"] %>M
 <% end %>
 <% unless neo4j.server.properties["neostore.relationshipstore.db.mapped_memory"].nil? %>
-  neostore.relationshipstore.db.mapped_memory=<%= neo4j.server.properties["neostore.relationshipstore.db.mapped_memory"] %>M
+  neostore.relationshipstore.db.mapped_memory=<%= node.neo4j.server.properties["neostore.relationshipstore.db.mapped_memory"] %>M
 <% end %>
 <% unless neo4j.server.properties["neostore.propertystore.db.mapped_memory"].nil? %>
-  neostore.propertystore.db.mapped_memory=<%= neo4j.server.properties["neostore.propertystore.db.mapped_memory"] %>M
+  neostore.propertystore.db.mapped_memory=<%= node.neo4j.server.properties["neostore.propertystore.db.mapped_memory"] %>M
 <% end %>
 <% unless neo4j.server.properties["neostore.propertystore.db.strings.mapped_memory"].nil? %>
-  neostore.propertystore.db.strings.mapped_memory=<%= neo4j.server.properties["neostore.propertystore.db.strings.mapped_memory"] %>M
+  neostore.propertystore.db.strings.mapped_memory=<%= node.neo4j.server.properties["neostore.propertystore.db.strings.mapped_memory"] %>M
 <% end %>
 <% unless neo4j.server.properties["neostore.propertystore.db.arrays.mapped_memory"].nil? %>
-  neostore.propertystore.db.arrays.mapped_memory=<%= neo4j.server.properties["neostore.propertystore.db.arrays.mapped_memory"] %>M
+  neostore.propertystore.db.arrays.mapped_memory=<%= node.neo4j.server.properties["neostore.propertystore.db.arrays.mapped_memory"] %>M
 <% end %>
 
 # Enable this to be able to upgrade a store from 1.4 -> 1.5 or 1.4 -> 1.6
