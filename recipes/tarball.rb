@@ -21,7 +21,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-include_recipe "java"
+include_recipe "java" if node.neo4j.install_java
 package 'unzip'
 package 'lsof' # Required to launch the neo4j service
 
